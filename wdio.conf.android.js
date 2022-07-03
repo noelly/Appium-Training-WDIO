@@ -24,7 +24,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/ios/ios*.js'
+        './test/specs/android/delete-note-screen.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -52,24 +52,14 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [
-    //     {
-    //     platformName: "Android",
-    //     "appium:platformVersion":"11.0",
-    //     "appium:deviceName": "Pixel 3",
-    //     "appium:automationName": "UIAutomator2",
-    //     "appium:app": path.join(process.cwd(), "./app/android/ColorNote+Notepad.apk"),
-    //     "appium:autoGrantPermissions": true
-    // }
-    {
-        platformName: "ios",
-        "appium:platformVersion":"15.5",
-        "appium:deviceName": "iPhone 12",
-        "appium:automationName": "xcuitest",
-        "appium:app": path.join(process.cwd(), "./app/ios/UIKitCatalog.app"),
+    capabilities: [{
+        platformName: "Android",
+        "appium:platformVersion":"11.0",
+        "appium:deviceName": "Pixel 3",
+        "appium:automationName": "UIAutomator2",
+        "appium:app": path.join(process.cwd(), "./app/android/ColorNote+Notepad.apk"),
         "appium:autoGrantPermissions": true
-    }
-],
+    }],
     //
     // ===================
     // Test Configurations

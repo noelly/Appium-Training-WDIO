@@ -13,25 +13,24 @@
     },
     {
       "type": "text",
+      "name": "appium:deviceName",
+      "value": "iPhone 12"
+    },
+    {
+      "type": "text",
       "name": "appium:app",
-      "value": "/Users/noel/Git/wdio-appium-android/app/ios/UIKitCatalog.app"
+      "value": "/Users/noel/Git/wdio-appium-android/app/android/ColorNote+Notepad.apk"
     },
     {
       "type": "text",
       "name": "appium:automationName",
-      "value": "xcuitest"
-    },
-    {
-      "type": "text",
-      "name": "appium:deviceName",
-      "value": "iPhone 12 Pro"
+      "value": "UIAutomator2"
     }
   ],
   "server": {
     "local": {},
     "remote": {
-      "port": "4723",
-      "path": ""
+      "port": "4723"
     },
     "sauce": {
       "dataCenter": "us-west-1"
