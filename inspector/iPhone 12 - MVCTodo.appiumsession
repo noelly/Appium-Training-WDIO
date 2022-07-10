@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "caps": [
+    {
+      "type": "text",
+      "name": "platformName",
+      "value": "ios"
+    },
+    {
+      "type": "text",
+      "name": "appium:platformVersion",
+      "value": "14.5"
+    },
+    {
+      "type": "text",
+      "name": "appium:deviceName",
+      "value": "iPhone 12 Pro"
+    },
+    {
+      "type": "text",
+      "name": "appium:app",
+      "value": "/Users/noel/Git/Appium-Training-WDIO/app/ios/MVCTodo.app"
+    },
+    {
+      "type": "text",
+      "name": "appium:automationName",
+      "value": "xcuitest"
+    }
+  ],
+  "server": {
+    "local": {},
+    "remote": {
+      "port": "4723"
+    },
+    "sauce": {
+      "dataCenter": "us-west-1"
+    },
+    "headspin": {},
+    "browserstack": {},
+    "lambdatest": {},
+    "advanced": {},
+    "bitbar": {},
+    "kobiton": {},
+    "perfecto": {},
+    "pcloudy": {},
+    "testingbot": {},
+    "experitest": {},
+    "roboticmobi": {}
+  },
+  "serverType": "remote",
+  "visibleProviders": []
+}

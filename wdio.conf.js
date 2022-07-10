@@ -24,7 +24,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/ios/ios*.js'
+        './test/specs/ios/ios-ToDoList-Screen-Objects.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -63,10 +63,10 @@ exports.config = {
     // }
     {
         platformName: "ios",
-        "appium:platformVersion":"15.5",
+        "appium:platformVersion":"14.5",
         "appium:deviceName": "iPhone 12",
         "appium:automationName": "xcuitest",
-        "appium:app": path.join(process.cwd(), "./app/ios/UIKitCatalog.app"),
+        "appium:app": path.join(process.cwd(), "./app/ios/MVCTodo.app"),
         "appium:autoGrantPermissions": true
     }
 ],
