@@ -2,16 +2,20 @@
 import ListScreen from '../../screenobjects/ios/list.screen';
 
 describe('To Do List', () => {
-    it('Create a ToDo list', async () => {
-
+    before(async () => {
         await ListScreen.createListBtn.click();
         await ListScreen.listNameInput.addValue("Things to do");
         await ListScreen.createBtn.click();
         await expect(await ListScreen.listNameField("Things to do")).toBeExisting();
+        await ListScreen.listNameField("Things to do").click();
+    });
+
+    beforeEach(async () => {
+        console.log('Before each Hook');
     });
 
     it('Create Todo Item', async () => {
-        await ListScreen.listNameField("Things to do").click();
+        //create to do item
         await ListScreen.createItemBtn.click();
         await ListScreen.titleInput.addValue("Buy Groceries");
         await ListScreen.dueBtn.click();
@@ -23,6 +27,5 @@ describe('To Do List', () => {
         //assertion
         await expect(await ListScreen.getByAccessibility("Buy Groceries")).toBeExisting();
         await expect(await ListScreen.getByAccessibility("Due July 24, 2022")).toBeExisting();
-        
     });
 });

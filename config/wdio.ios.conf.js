@@ -12,7 +12,7 @@ config.port = 4723;
 // ============
 
 config.specs = [
-    'test/specs/ios/ios-ToDoList-Screen-Objects.spec.js'
+    'test/specs/ios/ios-ToDoList-Screen-Objects-withHooks.spec.js'
 ];
 
 // ============
@@ -26,7 +26,6 @@ config.capabilities = [
         "appium:automationName": "xcuitest",
         "appium:app": path.join(process.cwd(), "./app/ios/MVCTodo.app"),
         "appium:autoGrantPermissions": true
-
     }
 ];
 

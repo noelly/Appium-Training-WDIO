@@ -2,12 +2,12 @@ import addNoteScreen from '../../screenobjects/android/add-note.screen';
 import EditNoteScreen from '../../screenobjects/android/edit-note.screen';
 
 describe('Add Notes', () => {
-    it('delete note', async () => {
-
+    before(async () => {
         await EditNoteScreen.skipTutorial();
         await EditNoteScreen.addAndSaveNote("TV Shows", "Friends\nBreakingBad\nPeakyBlinders");
+    });
 
-        
+    it('delete note', async () => {
         //open the note
         await driver.pause(1000);
         const note = await addNoteScreen.noteTitle.getText;
