@@ -33,13 +33,14 @@ class ListScreen {
     }
 
     listNameField(name) {
-        return $(`~${name}`)
+        return $(`~${name}`);
     }
 
     getByAccessibility(name) {
-        return $(`~${name}`)
+        return $(`~${name}`);
     }
 
 }
 
-module.exports = new ListScreen()
+//module.exports = new ListScreen();
+export default new ListScreen();

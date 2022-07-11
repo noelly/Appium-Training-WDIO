@@ -1,4 +1,5 @@
-const ListScreen = require('../../screenobjects/ios/list.screen')
+//const ListScreen = require('../../screenobjects/ios/list.screen');
+import ListScreen from '../../screenobjects/ios/list.screen';
 
 describe('To Do List', () => {
     it('Create a ToDo list', async () => {

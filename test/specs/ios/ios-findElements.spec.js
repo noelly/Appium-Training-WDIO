@@ -1,5 +1,3 @@
-const { DriverConfig } = require("appium/build/lib/extension/driver-config");
-
 describe('ios Find Elements', () => {
     it('Find elements bu accessibility id', async () => {
         await $('~Alert Views').click();

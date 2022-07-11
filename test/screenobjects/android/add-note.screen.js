@@ -17,39 +17,39 @@ get editingText() {
 }
 
 get editTitleTextField() {
-    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_title"]')
+    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_title"]');
 }
 
 get editNoteTextField() {
-    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_note"]')
+    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_note"]');
 }
 
 get editButtnonMenu() {
-    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_btn"]')
+    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/edit_btn"]');
 }
 
 get viewNotes() {
-    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/view_note"]')
+    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/view_note"]');
 }
 
 get noteTitle() {
-    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/title"]')
+    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/title"]');
 }
 
 get threeDotMenu() {
-    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/menu_btn"]')
+    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/menu_btn"]');
 }
 
 get deleteButton() {
-    return $('//*[@text="Delete"]')
+    return $('//*[@text="Delete"]');
 }
 
 get sideMenu() {
-    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/icon_nav"]')
+    return $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/icon_nav"]');
 }
 
 get trashCan() {
-    return ($('//*[@text="Trash Can"]'))
+    return ($('//*[@text="Trash Can"]'));
 }
 
 async saveNote() {
