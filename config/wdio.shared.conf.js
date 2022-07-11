@@ -1,4 +1,4 @@
-const path = require('path');
+//const path = require('path');
 
 exports.config = {
     //
@@ -6,7 +6,7 @@ exports.config = {
     // Runner Configuration
     // ====================
     //
-    port: 4723,
+    // port: 4723,
     //
     // ==================
     // Specify Test Files
@@ -23,9 +23,9 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: [
-        './test/specs/ios/ios-ToDoList-Screen-Objects.spec.js'
-    ],
+    // specs: [
+    //     './test/specs/ios/ios-ToDoList-Screen-Objects.spec.js'
+    // ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -52,24 +52,24 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [
+    //     capabilities: [
+    //         {
+    //         platformName: "Android",
+    //         "appium:platformVersion":"11.0",
+    //         "appium:deviceName": "Pixel 3",
+    //         "appium:automationName": "UIAutomator2",
+    //         "appium:app": path.join(process.cwd(), "./app/android/ColorNote+Notepad.apk"),
+    //         "appium:autoGrantPermissions": true
+    //     }
     //     {
-    //     platformName: "Android",
-    //     "appium:platformVersion":"11.0",
-    //     "appium:deviceName": "Pixel 3",
-    //     "appium:automationName": "UIAutomator2",
-    //     "appium:app": path.join(process.cwd(), "./app/android/ColorNote+Notepad.apk"),
-    //     "appium:autoGrantPermissions": true
-    // }
-    {
-        platformName: "ios",
-        "appium:platformVersion":"14.5",
-        "appium:deviceName": "iPhone 12",
-        "appium:automationName": "xcuitest",
-        "appium:app": path.join(process.cwd(), "./app/ios/MVCTodo.app"),
-        "appium:autoGrantPermissions": true
-    }
-],
+    //         platformName: "ios",
+    //         "appium:platformVersion":"14.5",
+    //         "appium:deviceName": "iPhone 12",
+    //         "appium:automationName": "xcuitest",
+    //         "appium:app": path.join(process.cwd(), "./app/ios/MVCTodo.app"),
+    //         "appium:autoGrantPermissions": true
+    //     }
+    // ],
     //
     // ===================
     // Test Configurations
@@ -118,7 +118,7 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['appium'],
-    
+
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -142,7 +142,7 @@ exports.config = {
     reporters: ['spec'],
 
 
-    
+
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
