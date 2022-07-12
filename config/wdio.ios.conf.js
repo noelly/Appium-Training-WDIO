@@ -26,7 +26,8 @@ config.capabilities = [
         "appium:automationName": "xcuitest",
         "appium:app": path.join(process.cwd(), "./app/ios/MVCTodo.app"),
         "appium:autoGrantPermissions": true
-    }
+    }   
 ];
+config.services = ['appium'];
 
 exports.config = config;
