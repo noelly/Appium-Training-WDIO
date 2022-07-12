@@ -1,11 +1,13 @@
-const path = require('path');
+require('dotenv').config()
 const { config } = require('./wdio.shared.conf');
 
-// ====================
-// Runner Configuration
-// ====================
 
-config.port = 4723;
+// ============
+// Browserstalk
+// ============
+config.user= process.env.BROWSERSTACK_USER;
+config.key= process.env.BROWSERSTACK_KEY;
+
 
 // ============
 // Specs
@@ -21,13 +23,13 @@ config.specs = [
 config.capabilities = [
     {
         platformName: "Android",
-        "appium:platformVersion": "11.0",
-        "appium:deviceName": "Pixel 3",
+        "appium:platformVersion": "10.0",
+        "appium:deviceName": "Google Pixel 3",
         "appium:automationName": "UIAutomator2",
-        "appium:app": path.join(process.cwd(), "./app/android/ColorNote+Notepad.apk"),
+        "appium:app": "bs://78ce2f06c58592404e06cca8e2f00b4b1780fdf0",
         "appium:autoGrantPermissions": true
     }
 ];
-config.services = ['appium'];
+config.services = ['browserstack'];
 
 exports.config = config;

@@ -351,3 +351,7 @@ MigrationBackup/
 
 .DS_Store
 test/.DS_Store
+
+.env
+
+
