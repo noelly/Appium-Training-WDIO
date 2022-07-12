@@ -4,7 +4,7 @@ import EditNoteScreen from '../../screenobjects/android/edit-note.screen';
 describe('Add Notes', () => {
     before(async () => {
         await EditNoteScreen.skipTutorial();
-        await EditNoteScreen.addAndSaveNote("TV Shows", "Friends\nBreakingBad\nPeakyBlinders");
+        await EditNoteScreen.addAndSaveNote("TV Shows", "Pokemon\nBreakingBad\nPeakyBlinders");
     });
 
     it('delete note', async () => {
