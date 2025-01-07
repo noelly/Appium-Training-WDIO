@@ -21,8 +21,8 @@ config.specs = [
 config.capabilities = [
     {
         platformName: "ios",
-        "appium:platformVersion": "14.5",
-        "appium:deviceName": "iPhone 12",
+        "appium:platformVersion": "18.2",
+        "appium:deviceName": "iPhone 16",
         "appium:automationName": "xcuitest",
         "appium:app": path.join(process.cwd(), "./app/ios/MVCTodo.app"),
         "appium:autoGrantPermissions": true

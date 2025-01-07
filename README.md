@@ -50,3 +50,8 @@ appium
 
 # Run test
  -- npx wdio
+
+ • run ios test with new config
+	◦ npx wdio config/wdio.ios.conf.js
+• run android test with new config
+	◦ npx wdio config/wdio.android.conf.js
